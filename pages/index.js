@@ -178,7 +178,7 @@ export default function Home() {
 
       <section className=" min-h-screen text-center flex flex-col items-center bg-[#FEFEFE] p-4 py-16">
         <div className=" font-italiana text-5xl text-[#84A0BC]">Say Something</div>
-        <p className=" font-cormorant mt-5 ">Berikan Do'a dan Ucapan terbaik anda untuk kedua mempelai.</p>
+        <p className=" font-cormorant mt-5 ">Berikan Do`a dan Ucapan terbaik anda untuk kedua mempelai.</p>
         <form id="formAdd" className=" flex flex-col mt-5 w-5/6 md:w-2/5 space-y-5">
           <input className=" bg-gray-200  py-4 px-4 rounded focus:outline-none" type="input" name="nama" placeholder="Nama lengkap" required="" defaultValue="" />
           <textarea className=" bg-gray-200 py-4 px-4 rounded focus:outline-none" name="ucapan" rows="6" placeholder="Do`a dan ucapan anda .." required="" ></textarea>
@@ -313,9 +313,9 @@ export default function Home() {
           <div className=" font-cormorant text-center">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami<br />
             apabila Bapak / Ibu / Saudara / Saudari dapat hadir untuk memberikan <br />
-            do'a restu kepada kedua memeplai.
+            do`a restu kepada kedua memeplai.
           </div>
-          <div className=" font-cormorant text-xl font-bold mt-5">Wassalamu'alaikum Warrahmatullah Wabarakatuh</div>
+          <div className=" font-cormorant text-xl font-bold mt-5">Wassalamu`alaikum Warrahmatullah Wabarakatuh</div>
           <div className=" font-italiana text-5xl text-[#84A0BC] mt-20">Nadia & Dyan</div>
           <div className=" font-cormorant mt-5">Powered with ❤️ by <a href="https://www.instagram.com/tukangetik/" target="_blank" rel="noreferrer" className=" hover:text-red-500 hover:underline underline">@Niqahin</a></div>
         </div>
