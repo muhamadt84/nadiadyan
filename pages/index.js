@@ -4,6 +4,7 @@ import Flower1 from '../public/assets/Flower1.png'
 import Female from '../public/assets/Female.png'
 import Male from '../public/assets/Male.png'
 import BgMobile1 from '../public/assets/BgMobile1.png'
+import BgMobile2 from '../public/assets/BgMobile2.png'
 import { useState } from "react"
 
 export default function Home() {
@@ -70,7 +71,7 @@ export default function Home() {
               <div className=" font-medium">Putri Dari</div>
               <div>Bapak Taryono W & Ibu Utiek Agriani</div>
               <div className=" flex justify-center">
-                <a href="https://instagram.com/" target="_blank" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
+                <a href="https://instagram.com/" target="_blank" rel="noreferrer" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                   </svg>
@@ -87,7 +88,7 @@ export default function Home() {
               <div className=" font-medium">Putra Dari</div>
               <div>Bapak Efnedy Arief & Ibu Gusnety Zam</div>
               <div className=" flex justify-center">
-                <a href="https://instagram.com/" target="_blank" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
+                <a href="https://instagram.com/" target="_blank" rel="noreferrer" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                   </svg>
@@ -131,10 +132,9 @@ export default function Home() {
           Acara tersebut akan dilaksanakan pada<br />
         </div>
 
-        <div className=" flex mt-8 flex-col space-y-12 md:flex-row md:space-x-3">
+        <div className=" flex mt-8 flex-col space-y-12 md:space-y-0 md:flex-row md:space-x-3">
           <div className=" w-[25rem] h-[35rem] relative flex rounded-t-full rounded-xl border border-[#BBAFC7] shadow-2xl" >
-            <img className=" w-full object-cover  rounded-t-full rounded-xl" src='../assets/BgMobile1.png' alt="Bg Mobile 1" />
-            {/* <Image className=" rounded-t-full" src={BgMobile1} width={375} height={812} /> */}
+            <Image className=" w-full object-cover  rounded-t-full rounded-xl" src={BgMobile1} alt="Bg Mobile 1" width={400} height={866} />
             <div className=" absolute flex flex-col justify-center inset-0 text-center mt-12">
               <div className=" font-qwitcher-grypen text-7xl">Akad Nikah</div>
               <div className=" font-italiana text-4xl font-bold">22/10/2022</div>
@@ -144,7 +144,7 @@ export default function Home() {
                 Kav. I Jakarta Selatan<br />
               </div>
               <div className=" flex justify-center">
-                <a href="https://goo.gl/maps/ybaaSWsj3UNosw637" target="_blank" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
+                <a href="https://goo.gl/maps/ybaaSWsj3UNosw637" target="_blank" rel="noreferrer" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                   </svg>
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" w-[25rem] h-[35rem] relative flex rounded-t-full rounded-xl border border-[#BBAFC7] shadow-2xl" >
-            <img className=" w-full object-cover  rounded-t-full rounded-xl" src='../assets/BgMobile2.png' alt="Bg Mobile 2" />
+            <Image className=" w-full object-cover  rounded-t-full rounded-xl" src={BgMobile2} alt="Bg Mobile 2" width={400} height={866} />
             <div className=" absolute flex flex-col justify-center inset-0 text-center mt-12">
               <div className=" font-qwitcher-grypen text-7xl">Resepsi Nikah</div>
               <div className=" font-italiana text-4xl font-bold">22/10/2022</div>
@@ -164,7 +164,7 @@ export default function Home() {
                 Kav. I Jakarta Selatan<br />
               </div>
               <div className=" flex justify-center">
-                <a href="https://goo.gl/maps/ybaaSWsj3UNosw637" target="_blank" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
+                <a href="https://goo.gl/maps/ybaaSWsj3UNosw637" target="_blank" rel="noreferrer" className=" p-1 px-5 bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 flex items-center space-x-2 focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                   </svg>
@@ -317,7 +317,7 @@ export default function Home() {
           </div>
           <div className=" font-cormorant text-xl font-bold mt-5">Wassalamu'alaikum Warrahmatullah Wabarakatuh</div>
           <div className=" font-italiana text-5xl text-[#84A0BC] mt-20">Nadia & Dyan</div>
-          <div className=" font-cormorant mt-5">Powered with ❤️ by <a href="https://www.instagram.com/tukangetik/" target="_blank" className=" hover:text-red-500 hover:underline underline">@Niqahin</a></div>
+          <div className=" font-cormorant mt-5">Powered with ❤️ by <a href="https://www.instagram.com/tukangetik/" target="_blank" rel="noreferrer" className=" hover:text-red-500 hover:underline underline">@Niqahin</a></div>
         </div>
       </section>
 
