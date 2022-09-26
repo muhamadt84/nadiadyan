@@ -82,7 +82,6 @@ export default function Home() {
   }, [])
 
   const renderer = (formated) => {
-    // console.log(formated);
     return (
       <div
         className=" flex text-3xl space-x-12 mt-5 font-cormorant"
@@ -113,9 +112,12 @@ export default function Home() {
   })
 
   useEffect(() => {
-    state.cookie === undefined && handleCookies('0')
-    getData()    
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    let mounted = true
+    if (mounted) {
+      state.cookie === undefined && handleCookies('0')
+      getData()
+    }
+    return () => mounted === false
   }, [state.cookie])
 
   const getData = () => {
@@ -192,7 +194,7 @@ export default function Home() {
       name: state.nama,
       message: state.ucapan,
       confirm: state.kehadiran,
-      date: '2022-05-22',
+      date: '2022-10-22',
     }
 
     addData(params)
@@ -227,6 +229,7 @@ export default function Home() {
   }
 
   const router = useRouter()
+  console.log({ state });
 
   return (
     <>
