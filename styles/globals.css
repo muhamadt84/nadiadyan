@@ -4,4 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body { overflow-x:hidden; }
+html,
+body {
+  overflow-x: hidden;
+}
+
+.cover {
+  background-image: url('/assets/Couple2.png');
+}
+
+@media (min-width: 768px) {
+  .cover {
+    background-image: url('/assets/Couple3.png');
+  }
+}
