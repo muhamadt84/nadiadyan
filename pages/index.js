@@ -231,8 +231,8 @@ export default function Home() {
 
   const router = useRouter()
   console.log({ router });
-  var host = window.location.protocol + "//" + window.location.host;
-  console.log(host);
+  // var host = window.location.protocol + "//" + window.location.host;
+  // console.log(host);
 
   return (
     <>
