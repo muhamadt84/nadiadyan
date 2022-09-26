@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Flower1 from '../public/assets/Flower1.png'
 import Female from '../public/assets/Female.png'
 import Male from '../public/assets/Male.png'
-import Couple1 from '../public/assets/Couple1.png'
+// import Couple1 from '../public/assets/Couple1.png'
 import BgMobile1 from '../public/assets/BgMobile1.png'
 import BgMobile2 from '../public/assets/BgMobile2.png'
 // import Bg1 from '../public/assets/Bg1.png'
@@ -113,7 +113,7 @@ export default function Home() {
 
   useEffect(() => {
     state.cookie === undefined && handleCookies('0')
-    getData()    
+    getData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.cookie])
 
@@ -225,8 +225,6 @@ export default function Home() {
     )
   }
 
-  const router = useRouter()
-
   return (
     <>
       <Head>
@@ -234,17 +232,17 @@ export default function Home() {
         <link rel="icon" href='/favicon.png' />
         <meta name="description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
         <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <link rel="canonical" href={router.basePath} />
+        <link rel="canonical" href={window.location.href} />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta property="og:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta property="og:url" content={router.basePath} />
+        <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="nadiadyan.vercel.app" />
         <meta property="article:section" content="WEDDING" />
         <meta property="og:updated_time" content="2022-09-26T00:09:54+00:00" />
-        <meta property="og:image" content={Couple1} />
-        <meta property="og:image:secure_url" content={Couple1} />
+        <meta property="og:image" content={window.location.href + 'assets/Couple1.png'} />
+        <meta property="og:image:secure_url" content={window.location.href + 'assets/Couple1.png'} />
         <meta property="og:image:width" content="650" />
         <meta property="og:image:height" content="850" />
         <meta property="og:image:alt" content="Nadia ❤️ Dyan" />
@@ -254,7 +252,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta name="twitter:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta name="twitter:image" content={Couple1} />
+        <meta name="twitter:image" content={window.location.href + 'assets/Couple1.png'} />
       </Head>
 
       <audio id="audioId" className=" hidden" controls src="/Nikah.mp3" autoplay>
