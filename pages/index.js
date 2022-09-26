@@ -242,17 +242,17 @@ export default function Home() {
         <link rel="icon" href='/favicon.png' />
         <meta name="description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
         <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <link rel="canonical" href={baseUrl} />
+        <link rel="canonical" href="/" />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta property="og:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta property="og:url" content={baseUrl} />
+        <meta property="og:url" content="/" />
         <meta property="og:site_name" content="nadiadyan.vercel.app" />
         <meta property="article:section" content="WEDDING" />
         <meta property="og:updated_time" content="2022-09-26T00:09:54+00:00" />
-        <meta property="og:image" content={baseUrl + 'assets/Couple1.png'} />
-        <meta property="og:image:secure_url" content={baseUrl + 'assets/Couple1.png'} />
+        <meta property="og:image" content='/assets/Couple1.png' />
+        <meta property="og:image:secure_url" content='/assets/Couple1.png' />
         <meta property="og:image:width" content="650" />
         <meta property="og:image:height" content="850" />
         <meta property="og:image:alt" content="Nadia ❤️ Dyan" />
@@ -262,7 +262,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta name="twitter:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta name="twitter:image" content={baseUrl + 'assets/Couple1.png'} />
+        <meta name="twitter:image" content='/assets/Couple1.png' />
       </Head>
 
       <audio id="audioId" className=" hidden" controls src="/Nikah.mp3" autoplay>
