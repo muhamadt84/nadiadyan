@@ -288,7 +288,7 @@ export default function Home() {
             <div className=" font-italiana text-8xl text-[#84A0BC] mt-5 text-center ">Nadia & Dyan</div>
           </div>
           <div className=" text-center">
-            <div className=" font-cormorant text-xl text-white italic mt-5">Kepada YTH.</div>
+            <div className=" font-cormorant text-xl text-white italic mt-5">Kepada YTH. {baseUrl + 'assets/Couple1.png'}</div>
             <div className=" font-cormorant text-3xl text-white">Tamu Undangan</div>
             <button onClick={() => handleCover()} className=" p-2 px-5 text-sm bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 focus:outline-none">
               Buka Undangan
