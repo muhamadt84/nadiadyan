@@ -112,12 +112,9 @@ export default function Home() {
   })
 
   useEffect(() => {
-    let mounted = true
-    if (mounted) {
-      // state.cookie === undefined && handleCookies('0')
-      getData()
-    }
-    return () => mounted === false
+    state.cookie === undefined && handleCookies('0')
+    getData()    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.cookie])
 
   const getData = () => {
@@ -229,7 +226,6 @@ export default function Home() {
   }
 
   const router = useRouter()
-  console.log({ state });
 
   return (
     <>
@@ -493,7 +489,7 @@ export default function Home() {
                 Kirimkan Ucapan
               </button>
             ) : (
-              <div className=' py-2 bg-gradient-to-r from-[#84A0BC] to-[#BBAFC7] text-white text-base xxl:text-lg font-medium rounded-full'>Terima kasih atas Do'a dan Ucapan anda</div>
+              <div className=' py-2 bg-gradient-to-r from-[#84A0BC] to-[#BBAFC7] text-white text-base xxl:text-lg font-medium rounded-full'>Terima kasih atas Do&apos;a dan Ucapan anda</div>
             )}
           </form>
         )}
@@ -534,88 +530,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-
-
-          {/* <div className=" flex space-x-4">
-            <div className=" w-1/12">
-              <div className=" w-10 h-10 bg-gray-100 text-[#BBAFC7] border border-[#BBAFC7] rounded-full flex justify-center items-center text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-person-heart" viewBox="0 0 16 16">
-                  <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
-                </svg>
-              </div>
-            </div>
-            <div className=" flex w-11/12">
-              <div className=" text-xl text-gray-200 -mr-2 mt-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                </svg>
-              </div>
-              <div className=" rounded bg-gray-200 p-4 text-left">
-                <div className=" font-bold">Taufik Hidayah</div>
-                <div>Pernikahan yg smawa....dilancarkan acaranya dilanggengkan jodohnya dan di sejahterakan hidupnya dunia dan akherat.....Aamiin yra....</div>
-              </div>
-            </div>
-          </div>
-          <div className=" flex space-x-4">
-            <div className=" w-1/12">
-              <div className=" w-10 h-10 bg-gray-100 text-[#BBAFC7] border border-[#BBAFC7] rounded-full flex justify-center items-center text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-person-heart" viewBox="0 0 16 16">
-                  <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
-                </svg>
-              </div>
-            </div>
-            <div className=" flex w-11/12">
-              <div className=" text-xl text-gray-200 -mr-2 mt-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                </svg>
-              </div>
-              <div className=" rounded bg-gray-200 p-4 text-left">
-                <div className=" font-bold">Syifaa Robb</div>
-                <div>Semoga menjadi keluarga SAMAWA.....</div>
-              </div>
-            </div>
-          </div>
-          <div className=" flex space-x-4">
-            <div className=" w-1/12">
-              <div className=" w-10 h-10 bg-gray-100 text-[#BBAFC7] border border-[#BBAFC7] rounded-full flex justify-center items-center text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-person-heart" viewBox="0 0 16 16">
-                  <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
-                </svg>
-              </div>
-            </div>
-            <div className=" flex w-11/12">
-              <div className=" text-xl text-gray-200 -mr-2 mt-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                </svg>
-              </div>
-              <div className=" rounded bg-gray-200 p-4 text-left">
-                <div className=" font-bold">Abdul Fajar</div>
-                <div>Happy Wedding sista cantik ku !! semoga menjadi pasangan yang berbahagia sampai maut memisahkan!!! love love</div>
-              </div>
-            </div>
-          </div>
-          <div className=" flex space-x-4">
-            <div className=" w-1/12">
-              <div className=" w-10 h-10 bg-gray-100 text-[#BBAFC7] border border-[#BBAFC7] rounded-full flex justify-center items-center text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-person-heart" viewBox="0 0 16 16">
-                  <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
-                </svg>
-              </div>
-            </div>
-            <div className=" flex w-11/12">
-              <div className=" text-xl text-gray-200 -mr-2 mt-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                </svg>
-              </div>
-              <div className=" rounded bg-gray-200 p-4 text-left">
-                <div className=" font-bold">Lulu Randa</div>
-                <div>Congratulation for you two!!! Doa terbaik untuk kalian, semoga selalu dilancarkan, dibahagiakan dan disatukan selalu seterusterusnya!🤍🤍</div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
 
