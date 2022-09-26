@@ -114,7 +114,8 @@ export default function Home() {
 
   useEffect(() => {
     state.cookie === undefined && handleCookies('0')
-    getData()
+    getData()    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.cookie])
 
   const getData = () => {
