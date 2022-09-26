@@ -114,7 +114,7 @@ export default function Home() {
   useEffect(() => {
     let mounted = true
     if (mounted) {
-      state.cookie === undefined && handleCookies('0')
+      // state.cookie === undefined && handleCookies('0')
       getData()
     }
     return () => mounted === false
