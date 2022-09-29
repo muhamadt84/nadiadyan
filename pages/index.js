@@ -64,11 +64,25 @@ export default function Home() {
   const handleCover = () => {
     setCover(false)
     toggle()
-    AOS.refresh();
+
+    let title = document.querySelector(".title");
+    let female = document.querySelector(".female");
+    let male = document.querySelector(".male");
+    let date = document.querySelector(".date");
+    title.classList.remove('aos-animate')
+    female.classList.remove('aos-animate')
+    male.classList.remove('aos-animate')
+    date.classList.remove('aos-animate')
+    setTimeout(() => {
+      title.classList.add('aos-animate')
+      female.classList.add('aos-animate')
+      male.classList.add('aos-animate')
+      date.classList.add('aos-animate')
+    }, 500);
   }
 
   useEffect(() => {
-    setLoading(false)
+    setLoading(false) 
   }, [])
 
   useEffect(() => {
@@ -299,10 +313,10 @@ export default function Home() {
 
       <section className="  bg-no-repeat bg-cover bg-center w-full" style={{ backgroundImage: `url('../assets/Bg1.png')` }}>
         <div className=" justify-center items-center flex flex-col min-h-screen">
-          <div className=" font-italiana md:text-2xl font-bold">The Wedding Of</div>
-          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC] mt-5">Nadia &</div>
-          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC]">Dyan</div>
-          <div className=" font-italiana md:text-2xl font-bold mt-5">Sabtu, 22 OKtober 2022</div>
+          <div className=" font-italiana md:text-2xl font-bold title" data-aos="fade-up" data-aos-duration="500">The Wedding Of</div>
+          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC] mt-5 female" data-aos="fade-left" data-aos-duration="500">Nadia &</div>
+          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC] male" data-aos="fade-right" data-aos-duration="500">Dyan</div>
+          <div className=" font-italiana md:text-2xl font-bold mt-5 date" data-aos="fade-down" data-aos-duration="500">Sabtu, 22 OKtober 2022</div>
         </div>
       </section>
 
@@ -341,8 +355,8 @@ export default function Home() {
             </div>
             <div className=" md:w-1/2 flex flex-col justify-center text-center"
               data-aos="fade-up"
-              data-aos-offset="500"
-              data-aos-duration="500"
+            // data-aos-offset="500"
+            // data-aos-duration="500"
             >
               <div className=" font-qwitcher-grypen text-8xl">Nadia</div>
               <div className=" font-cormorant text-5xl">Nadia Ramadhianti</div>
@@ -362,8 +376,9 @@ export default function Home() {
           <div className=" flex flex-col-reverse md:flex-row justify-between mt-20">
             <div className=" md:w-1/2 flex flex-col justify-center text-center"
               data-aos="fade-down"
-              data-aos-offset="500"
-              data-aos-duration="500">
+            // data-aos-offset="500"
+            // data-aos-duration="500"
+            >
               <div className=" font-qwitcher-grypen text-8xl">Dyan</div>
               <div className=" font-cormorant text-5xl">Dyan Taufiqurrahman</div>
               <div className=" font-medium">Putra Dari</div>
