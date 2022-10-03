@@ -8,7 +8,8 @@ module.exports = {
     fontFamily: {
       'italiana': ['Italiana', 'sans-serif'],
       'cormorant': ['Cormorant', 'sans-serif'],
-      'qwitcher-grypen': ['Qwitcher Grypen', 'sans-serif']
+      'qwitcher-grypen': ['Qwitcher Grypen', 'cursive'],
+      'great-vibes': ['Great Vibes', 'cursive']
     },
     extend: {},
   },

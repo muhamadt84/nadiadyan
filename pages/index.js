@@ -78,7 +78,7 @@ export default function Home() {
       female.classList.add('aos-animate')
       male.classList.add('aos-animate')
       date.classList.add('aos-animate')
-    }, 500);
+    }, 100);
   }
 
   useEffect(() => {
@@ -239,16 +239,6 @@ export default function Home() {
     )
   }
 
-  // var baseUrl = ''
-  // if (typeof window != 'undefined') {
-  //   baseUrl = window.location.href
-  //   // console.log("Client side");
-  // }
-  // console.log(baseUrl);
-
-  // const router = useRouter()
-  // console.log({ router });
-
   return (
     <>
       <Head>
@@ -256,17 +246,17 @@ export default function Home() {
         <link rel="icon" href='/favicon.png' />
         <meta name="description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
         <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <link rel="canonical" href="https://nadiadyan.vercel.app/" />
+        <link rel="canonical" href="https://nadiadyan.com/" />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta property="og:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta property="og:url" content="https://nadiadyan.vercel.app/" />
-        <meta property="og:site_name" content="nadiadyan.vercel.app" />
+        <meta property="og:url" content="https://nadiadyan.com/" />
+        <meta property="og:site_name" content="nadiadyan.com" />
         <meta property="article:section" content="WEDDING" />
         <meta property="og:updated_time" content="2022-09-26T00:09:54+00:00" />
-        <meta property="og:image" content='https://nadiadyan.vercel.app/assets/Couple1.png' />
-        <meta property="og:image:secure_url" content='https://nadiadyan.vercel.app/assets/Couple1.png' />
+        <meta property="og:image" content='https://nadiadyan.com/assets/Couple1.png' />
+        <meta property="og:image:secure_url" content='https://nadiadyan.com/assets/Couple1.png' />
         <meta property="og:image:width" content="650" />
         <meta property="og:image:height" content="850" />
         <meta property="og:image:alt" content="Nadia ❤️ Dyan" />
@@ -276,7 +266,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nadia ❤️ Dyan | @Niqahin" />
         <meta name="twitter:description" content="Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri.." />
-        <meta name="twitter:image" content='https://nadiadyan.vercel.app/assets/Couple1.png' />
+        <meta name="twitter:image" content='https://nadiadyan.com/assets/Couple1.png' />
       </Head>
 
       <audio id="audioId" className=" hidden" controls src="/Nikah.mp3" autoPlay>
@@ -299,11 +289,12 @@ export default function Home() {
         <div className={` bg-black opacity-50 min-h-screen w-full absolute `} />
         <div className=" justify-center space-y-80 md:space-y-0 items-center flex flex-col z-20 md:mt-0">
           <div className=" text-center">
-            <div className=" font-italiana text-8xl text-[#84A0BC] mt-5 text-center ">Nadia & Dyan</div>
+            <div className=" font-great-vibes text-8xl text-[#84A0BC] mt-5 text-center ">Nadia & Dyan</div>
           </div>
           <div className=" text-center">
             <div className=" font-cormorant text-xl text-white italic mt-5">Kepada YTH.</div>
-            <div className=" font-cormorant text-3xl text-white">Tamu Undangan</div>
+            <div className=" font-cormorant text-2xl text-white">Bpk/Ibu/Saudara/i</div>
+            <div className=" font-cormorant text-2xl text-white">di Tempat</div>
             <button onClick={() => handleCover()} className=" p-2 px-5 text-sm bg-[#BBAFC7] text-white rounded-full mt-5 border border-[#BBAFC7] hover:text-[#BBAFC7] hover:bg-transparent duration-300 focus:outline-none">
               Buka Undangan
             </button>
@@ -313,10 +304,10 @@ export default function Home() {
 
       <section className="  bg-no-repeat bg-cover bg-center w-full" style={{ backgroundImage: `url('../assets/Bg1.png')` }}>
         <div className=" justify-center items-center flex flex-col min-h-screen">
-          <div className=" font-italiana md:text-2xl font-bold title" data-aos="fade-up" data-aos-duration="500">The Wedding Of</div>
-          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC] mt-5 female" data-aos="fade-left" data-aos-duration="500">Nadia &</div>
-          <div className=" font-italiana text-7xl md:text-8xl text-[#84A0BC] male" data-aos="fade-right" data-aos-duration="500">Dyan</div>
-          <div className=" font-italiana md:text-2xl font-bold mt-5 date" data-aos="fade-down" data-aos-duration="500">Sabtu, 22 OKtober 2022</div>
+          <div className=" font-italiana md:text-2xl font-bold title" data-aos="fade-up" data-aos-delay="3000">The Wedding Of</div>
+          <div className=" font-great-vibes text-7xl md:text-8xl text-[#84A0BC] mt-5 female" data-aos="fade-left" data-aos-delay="3000">Nadia &</div>
+          <div className=" font-great-vibes text-7xl md:text-8xl text-[#84A0BC] male" data-aos="fade-right" data-aos-delay="3000">Dyan</div>
+          <div className=" font-italiana md:text-2xl font-bold mt-5 date" data-aos="fade-down" data-aos-delay="3000">Sabtu, 22 OKtober 2022</div>
         </div>
       </section>
 
@@ -353,12 +344,8 @@ export default function Home() {
                 <Image className=" rounded-full object-cover" src={Female} alt="Female" width={200} height={200} />
               </div>
             </div>
-            <div className=" md:w-1/2 flex flex-col justify-center text-center"
-              data-aos="fade-up"
-            // data-aos-offset="500"
-            // data-aos-duration="500"
-            >
-              <div className=" font-qwitcher-grypen text-8xl">Nadia</div>
+            <div className=" md:w-1/2 flex flex-col justify-center text-center mt-5 md:mt-0" data-aos="fade-up">
+              <div className=" font-great-vibes text-7xl">Nadia</div>
               <div className=" font-cormorant text-5xl">Nadia Ramadhianti</div>
               <div className=" font-medium">Putri Dari</div>
               <div>Bapak Taryono W & Ibu Utiek Agriani</div>
@@ -374,12 +361,8 @@ export default function Home() {
           </div>
 
           <div className=" flex flex-col-reverse md:flex-row justify-between mt-20">
-            <div className=" md:w-1/2 flex flex-col justify-center text-center"
-              data-aos="fade-down"
-            // data-aos-offset="500"
-            // data-aos-duration="500"
-            >
-              <div className=" font-qwitcher-grypen text-8xl">Dyan</div>
+            <div className=" md:w-1/2 flex flex-col justify-center text-center mt-5 md:mt-0" data-aos="fade-down">
+              <div className=" font-great-vibes text-7xl">Dyan</div>
               <div className=" font-cormorant text-5xl">Dyan Taufiqurrahman</div>
               <div className=" font-medium">Putra Dari</div>
               <div>Bapak Efnedy Arief & Ibu Gusnety Zam</div>
@@ -417,7 +400,6 @@ export default function Home() {
           Bapak/Ibu/Saudara/i ke acara pernikahan kami.<br />
           Acara tersebut akan dilaksanakan pada<br />
         </div> */}
-
         <div className=" flex mt-16 flex-col space-y-12 md:space-y-0 md:flex-row md:space-x-3">
           <div className=" w-[25rem] h-[35rem] relative flex rounded-t-full rounded-xl border border-[#BBAFC7] shadow-2xl" data-aos="flip-right">
             <Image className=" w-full object-cover  rounded-t-full rounded-xl" src={BgMobile1} alt="Bg Mobile 1" width={400} height={866} />
@@ -588,7 +570,7 @@ export default function Home() {
             do`a restu kepada kedua memeplai.
           </div>
           <div className=" font-cormorant text-xl font-bold mt-5" data-aos="fade-up-left">Wassalamu`alaikum Warrahmatullah Wabarakatuh</div>
-          <div className=" font-italiana text-5xl text-[#84A0BC] mt-20" data-aos="fade-down">Nadia & Dyan</div>
+          <div className=" font-great-vibes text-5xl text-[#84A0BC] mt-20" data-aos="fade-down">Nadia & Dyan</div>
           <div className=" font-cormorant mt-5" data-aos="fade-up">Powered with ❤️ by <a href="https://www.instagram.com/tukangetik/" target="_blank" rel="noreferrer" className=" hover:text-red-500 hover:underline underline">@Niqahin</a></div>
         </div>
       </section>
