@@ -82,7 +82,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    setLoading(false) 
+    setLoading(false)
   }, [])
 
   useEffect(() => {
