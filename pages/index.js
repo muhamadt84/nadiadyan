@@ -563,7 +563,7 @@ export default function Home() {
             Berhubung situasi pandemi COVID-19 ini belum berakhir kami memohon<br />
             maaf karena acara akan diselenggarakan sesuai peraturan dan imbauan pemerintah.
           </div>
-          <div className=" flex flex-row space-x-10 items-center mt-8">
+          <div className=" flex flex-row space-x-6 items-center mt-8">
             <div className=" flex flex-col text-sm font-cormorant justify-center space-y-2" data-aos="fade-up">
               <Image src={Mask} alt="Mask" width={50} height={50} />
               <p>Memakai Masker</p>
