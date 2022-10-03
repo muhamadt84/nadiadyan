@@ -11,7 +11,7 @@ const nextConfig = {
     ]
   },
   env: {
-    urlAPI: 'http://178.128.90.130/pf/pf_api/',
+    urlAPI: 'https://api.nadiadyan.com/',
   },
   reactStrictMode: true,
   swcMinify: true,

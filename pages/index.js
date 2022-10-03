@@ -15,15 +15,7 @@ import 'aos/dist/aos.css';
 import Head from "next/head"
 import { axiosGet, axiosPost } from "../libs/useAxios"
 
-export default function Home(req, res) {
-  // console.log({req, res});
-  const { method } = req;
-
-  // This will allow OPTIONS request
-  if (method === "OPTIONS") {
-    return res.status(200).send("ok");
-  }
-
+export default function Home() {
   const date = new Date("10/22/2022 08:00:00"); // some mock date
   const milliseconds = date.getTime();
   const counting = [
@@ -286,7 +278,7 @@ export default function Home(req, res) {
         <meta name="twitter:image" content='https://nadiadyan.vercel.app/assets/Couple1.png' />
       </Head>
 
-      <audio id="audioId" className=" hidden" controls src="/Nikah.mp3" autoplay>
+      <audio id="audioId" className=" hidden" controls src="/Nikah.mp3" autoPlay>
         Your browser does not support the
         <code>audio</code> element.
       </audio>
@@ -501,12 +493,11 @@ export default function Home(req, res) {
               className=" bg-gray-200  py-4 px-4 rounded focus:outline-none"
               name="kehadiran"
               defaultValue={'DEFAULT'}
-              value={'DEFAULT'}
               onChange={(e) => handleChange(e)}
               disabled={state.cookie === '0' ? false : true}
               required
             >
-              <option value="DEFAULT" disabled={true} selected={true}>Konfirmasi kehadiran</option>
+              <option value={'DEFAULT'} disabled={true} selected>Konfirmasi kehadiran</option>
               <option value={1}>Hadir 1 Orang</option>
               <option value={2}>Hadir 2 Orang</option>
               <option value={0}>Tidak Hadir</option>
