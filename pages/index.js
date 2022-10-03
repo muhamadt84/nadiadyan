@@ -14,9 +14,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from "next/head"
 import { axiosGet, axiosPost } from "../libs/useAxios"
-import { useRouter } from "next/router";
 
-export default function Home() {
+export default function Home(req, res) {
+  // console.log({req, res});
+  const { method } = req;
+
+  // This will allow OPTIONS request
+  if (method === "OPTIONS") {
+    return res.status(200).send("ok");
+  }
+
   const date = new Date("10/22/2022 08:00:00"); // some mock date
   const milliseconds = date.getTime();
   const counting = [
@@ -494,6 +501,7 @@ export default function Home() {
               className=" bg-gray-200  py-4 px-4 rounded focus:outline-none"
               name="kehadiran"
               defaultValue={'DEFAULT'}
+              value={'DEFAULT'}
               onChange={(e) => handleChange(e)}
               disabled={state.cookie === '0' ? false : true}
               required
@@ -572,3 +580,5 @@ export default function Home() {
     </>
   )
 }
+
+
