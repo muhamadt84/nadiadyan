@@ -4,11 +4,12 @@ import Image from 'next/image'
 import Flower1 from '../public/assets/Flower1.png'
 import Female from '../public/assets/Female.png'
 import Male from '../public/assets/Male.png'
-// import Couple1 from '../public/assets/Couple1.png'
 import BgMobile1 from '../public/assets/BgMobile1.png'
 import BgMobile2 from '../public/assets/BgMobile2.png'
-// import Bg1 from '../public/assets/Bg1.png'
-// import Bg2 from '../public/assets/Bg2.png'
+import HandsBubbles from '../public/assets/HandsBubbles.svg'
+import HandShake from '../public/assets/HandShake.svg'
+import Mask from '../public/assets/Mask.svg'
+import PeopleArrows from '../public/assets/PeopleArrows.svg'
 import Countdown from "react-countdown"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -407,7 +408,7 @@ export default function Home() {
           data-aos-offset="500"
           data-aos-duration="500">Save The Date</div>
         {!loading && <Countdown date={milliseconds} renderer={renderer} />}
-        <div className=" mt-8 text-center font-cormorant text-xl leading-tight"
+        {/* <div className=" mt-8 text-center font-cormorant text-xl leading-tight"
           data-aos="fade-down"
           data-aos-offset="500"
           data-aos-duration="500"
@@ -415,9 +416,9 @@ export default function Home() {
           Bersamaan dengan ini, kami bermaksud mengundang<br />
           Bapak/Ibu/Saudara/i ke acara pernikahan kami.<br />
           Acara tersebut akan dilaksanakan pada<br />
-        </div>
+        </div> */}
 
-        <div className=" flex mt-8 flex-col space-y-12 md:space-y-0 md:flex-row md:space-x-3">
+        <div className=" flex mt-16 flex-col space-y-12 md:space-y-0 md:flex-row md:space-x-3">
           <div className=" w-[25rem] h-[35rem] relative flex rounded-t-full rounded-xl border border-[#BBAFC7] shadow-2xl" data-aos="flip-right">
             <Image className=" w-full object-cover  rounded-t-full rounded-xl" src={BgMobile1} alt="Bg Mobile 1" width={400} height={866} />
             <div className=" absolute flex flex-col justify-center inset-0 text-center mt-12">
@@ -557,7 +558,31 @@ export default function Home() {
 
       <section className="  bg-no-repeat bg-cover bg-center w-full" style={{ backgroundImage: `url('../assets/Bg2.png')` }}>
         <div className=" justify-center items-center flex flex-col min-h-screen">
-          <div className=" font-cormorant text-center" data-aos="fade-down-right">
+          <div className=" font-cormorant text-xl font-bold mt-5" data-aos="fade-left">COVID19 - Protokol Kesehatan </div>
+          <div className=" font-cormorant text-center mt-2" data-aos="fade-right">
+            Berhubung situasi pandemi COVID-19 ini belum berakhir kami memohon<br />
+            maaf karena acara akan diselenggarakan sesuai peraturan dan imbauan pemerintah.
+          </div>
+          <div className=" flex flex-row space-x-10 items-center mt-8">
+            <div className=" flex flex-col text-sm font-cormorant justify-center space-y-2" data-aos="fade-up">
+              <Image src={Mask} alt="Mask" width={50} height={50} />
+              <p>Memakai Masker</p>
+            </div>
+            <div className=" flex flex-col text-sm font-cormorant justify-center space-y-2" data-aos="fade-up">
+              <Image src={HandsBubbles} alt="HandsBubbles" width={50} height={50} />
+              <p>Mencuci Tangan</p>
+            </div>
+            <div className=" flex flex-col text-sm font-cormorant justify-center space-y-2" data-aos="fade-up">
+              <Image src={PeopleArrows} alt="PeopleArrows" width={50} height={50} />
+              <p>Menjaga Jarak</p>
+            </div>
+            <div className=" flex flex-col text-sm font-cormorant justify-center space-y-2" data-aos="fade-up">
+              <Image src={HandShake} alt="HandShake" width={50} height={50} />
+              <p>Tidak Bersalaman</p>
+            </div>
+          </div>
+
+          <div className=" font-cormorant text-center mt-40" data-aos="fade-down-right">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami<br />
             apabila Bapak / Ibu / Saudara / Saudari dapat hadir untuk memberikan <br />
             do`a restu kepada kedua memeplai.
